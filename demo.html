@@ -1,0 +1,57 @@
+<!-- <html>
+    <head>
+        <script lang="javascript" type="text/javascript">
+            function doimau(){
+                var st=document.f1.t1.value
+                document.body.style.bgColor = "red"
+            }
+        </script>
+    </head>
+    <body>
+        <form name=f1 method="GET" action="xuliform">
+            <input type="text" name=t1>
+            <input type="button" name=b1 value="An vao em" onclick="doimau()">
+            <input type="reset" name=r1 value="Xoa vao em">
+        </form>    
+    </body>
+</html> -->
+<html>
+   <head>      
+      <script lang="javascript" type = "text/javascript">        
+            function sayHello() {
+                var st = document.f1.t1.value
+                document.bgColor = st
+            }        
+      </script>     
+   </head>
+   
+   <body>
+       <form name="f1" method="GET" action="xuliform">
+           <input type="text" name="t1" />
+           <input type = "button" name="b1" onclick = "sayHello()" value = "An vao em" />
+           <input type="reset" name="r1" value="Xoa em di" />
+       </form>
+       <table border="1">
+           <caption>Bang noi dung</caption>
+           <tr>
+               <th>STT</th>
+               <th>Noi dung</th>
+           </tr>
+           <tr>
+            <th>1</th>
+            <th>Noi dung o thu 2 hang 2</th>
+        </tr>
+        <tr>
+            <th>2</th>
+            <th>Noi dung o thu 2 hang 3</th>
+        </tr>
+        <tr>
+            <th>3</th>
+            <th>Noi dung o thu 2 hang 4 </th>
+        </tr>
+       </table>
+       <form name="f2" action="f1.jsp" method="POST">
+           
+       </form>
+   </body>  
+</html>
